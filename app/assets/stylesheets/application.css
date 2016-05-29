@@ -14,3 +14,46 @@
 *= require_tree .
  *= require_self
  */
+
+.navbar-transparent .navbar-brand:not([class * ="text"]), [class * ="navbar-ct"] .navbar-brand:not([class * ="text"]) {
+    color: #FFFFFF;
+    font-weight: 800;
+}
+
+
+
+ .header-wrapper {
+    position: relative;
+    height: 550px;
+}
+
+@media (max-width: 767px) {
+    /* line 166, /Users/BillHewitt/.rvm/gems/ruby-2.3.0/gems/paper_kit_pro-1.0.4.2/lib/sass/ct-paper/_responsive.scss */
+    .navbar-ct-transparent .navbar-toggle .icon-bar {
+        background: #ffffff;
+    }
+}
+
+
+ .section-light-brown {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.btn-simple {
+    border: 0;
+    padding: 7px 0px;
+}
+
+.header-wrapper .header .filter::after {
+    background-color: rgba(0, 0, 0, 0.7);
+    content: "";
+    display: block;
+    height: 550px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+

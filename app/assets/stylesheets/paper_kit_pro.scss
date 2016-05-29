@@ -1,6 +1,7 @@
 @import "bootstrap3/bootstrap";
 @import "bootstrap3/font-awesome";
 
+
 //==============================================================================
 // All scss files are live inside the gem package in /paper_kit_pro/lib/sass
 // You can customize the variables and typography below
@@ -63,6 +64,8 @@ $warning-states-color:       #BB992F !default;
 $danger-color:               #EB5E28 !default;
 $danger-bg:                  #EB5E28 !default;
 $danger-states-color:        #B33C12 !default;
+
+$header-color:               #000000 !default;
 
 
 
@@ -275,6 +278,7 @@ $filter-info:        darken($info-color, 10%);
 $filter-success:        darken($success-color, 10%);
 $filter-warning:       darken($warning-color, 10%);
 $filter-danger:          darken($danger-color, 10%);
+$filter-header:          darken($header-color, 30%);
 
 // variable used in footers
 $black-footer-bg:            #252422 !default;
@@ -317,7 +321,7 @@ $card-subtitle-orange:        #e95e37 !default;
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td{
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4{
@@ -327,9 +331,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4{
 
 h1, .h1 {
     font-size: $font-size-h1;
+    font-weight: 600;
 }
 h2, .h2{
     font-size: $font-size-h2;
+    font-weight: 800;
 }
 h3, .h3{
     font-size: $font-size-h3;
@@ -419,6 +425,8 @@ strong{
         color: $danger-color;
     }
 }
+
+
 
 // Core CSS
 @import "ct-paper/misc";
