@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
-gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -12,20 +11,16 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-source 'https://YOUR_APP_PAPER_KIT_PRO_KEY:@packagecloud.io:443/UiReady/paper_kit_pro/' do
+source 'https://c8ec1cc3c3dc9abe58a9bbaaef7d0561f8717a342451c9ba:@packagecloud.io:443/UiReady/paper_kit_pro/' do
   gem 'paper_kit_pro', '>= 1.0.4.2'
 end
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+     gem 'sqlite3'
 end
 
-group :development do
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
-
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+group :production do
+     gem 'pg'
+     gem 'rails_12factor'
 end
 
