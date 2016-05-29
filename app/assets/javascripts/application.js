@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require paper_kit_pro
 //= require turbolinks
 //= require_tree .
